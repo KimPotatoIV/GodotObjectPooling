@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvdv8sd5nakf"]
+
+[ext_resource type="PackedScene" uid="uid://cxtpydgtfenie" path="res://scenes/background/background.tscn" id="1_hyk8p"]
+[ext_resource type="PackedScene" uid="uid://qnxlovwwyuu6" path="res://scenes/hud/hud.tscn" id="1_k2fmo"]
+[ext_resource type="PackedScene" uid="uid://dhh1gp3241mk8" path="res://scenes/player/player.tscn" id="2_iuonh"]
+
+[node name="Main" type="Node2D"]
+
+[node name="HUD" parent="." instance=ExtResource("1_k2fmo")]
+
+[node name="Background" parent="." instance=ExtResource("1_hyk8p")]
+
+[node name="Player" parent="." instance=ExtResource("2_iuonh")]
+position = Vector2(320, 180)
+
+[node name="Bullets" type="Node2D" parent="."]
